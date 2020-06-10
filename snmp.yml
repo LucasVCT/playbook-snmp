@@ -10,4 +10,4 @@
   rocommunity chudijon 10.5.7.81
 
   - name: Restart SNMPD Service
-  action: service name=snmpd state=restarted
+    action: service name=snmpd state=restarted
