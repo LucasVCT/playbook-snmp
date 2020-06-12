@@ -1,7 +1,7 @@
 ---
 - hosts: all
  
- tasks:
+tasks:
   - name: Insert New line
   blockinfile:
   path: /etc/snmp/snmpd.conf
