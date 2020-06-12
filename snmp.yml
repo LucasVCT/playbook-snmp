@@ -1,12 +1,12 @@
-- name: snmp-test
-  hosts: all
- 
-  tasks:
-  - name: Insert New line
-  blockinfile:
-  path: /etc/snmp/snmpd.conf
-  insertafter: "rocommunity"
-  content: |
-  rocommunity chudijon 10.5.7.81
-  - name: Restart SNMPD Service
-  action: service name=snmpd state=restarted
+- hosts: all
+
+ tasks:
+ - name: Insert New line
+ blockinfile:
+ path: /etc/snmp/snmpd.conf
+ insertafter: "rocommunity"
+ content: |
+ rocommunity chudijon 10.5.7.81
+
+- name: Restart SNMPD Service
+ action: service name=snmpd state=restarted
