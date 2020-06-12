@@ -1,5 +1,6 @@
 ---
 - hosts: all
-  tasks:
+
+tasks:
     - name: Installing wget package
       yum: name=wget state=latest
