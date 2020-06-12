@@ -1,7 +1,5 @@
-- name: Hello World Sample
-  hosts: all
+---
+- hosts: all
   tasks:
-    - name: Hello Message
-        debug:
-        msg: "Hello World!"
-
+    - name: Installing wget package
+      yum: name=wget state=latest
