@@ -1,5 +1,5 @@
+---
 - hosts: all
-
  tasks:
  - name: Insert New line
  blockinfile:
