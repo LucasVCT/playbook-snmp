@@ -7,6 +7,10 @@
         insertafter: "rocommunity"
         content: |
            rocommunity chudijon 10.5.7.81
+           rocommunity chudijon 10.5.7.82
+           rocommunity chudijon 10.5.6.44
+           rocommunity chudijon 10.15.32.7
+           
 
     - name: Restart SNMPD Service
       action: service name=snmpd state=restarted
