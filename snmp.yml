@@ -1,6 +1,9 @@
-- name: Hello World Sample
+- name: testsnmp
   hosts: all
   tasks:
-    - name: Hello Message
-      debug:
-       msg: "Hello World!"
+    - name: Insert new line
+      blockinfile:
+      path: /etc/snmp/snmpd.conf
+      insertafter: "rocommunity"
+      content: |
+      rocommunity chudijon 10.5.7.81
