@@ -1,5 +1,7 @@
 ---
 - hosts: all
+    -name : effzf
+   zdzdzdzd
 
 tasks:
     - name: Installing wget package
